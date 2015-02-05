@@ -1,9 +1,8 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-
-# C extensions
-*.so
+.idea/*
+*.pyc
+*.egg-info/*
+.DS_Store
+.coverage
 
 # Distribution / packaging
 .Python
@@ -21,34 +20,3 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.coverage
-.cache
-nosetests.xml
-coverage.xml
-
-# Translations
-*.mo
-
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
-
-# Rope
-.ropeproject
-
-# Django stuff:
-*.log
-*.pot
-
-# Sphinx documentation
-docs/_build/
-

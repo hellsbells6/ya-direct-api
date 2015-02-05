@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from direct_api import DirectApi
+from directapi import DirectApi
 
 
 def main():

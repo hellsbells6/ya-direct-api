@@ -1,13 +1,4 @@
 # -*- coding:utf-8 -*-
-
-"""
-@author: amureki
-@contact: http://twitter.com/amureki
-@license MIT License, see LICENSE file
-
-Copyright (C) 2014
-"""
-
 import json
 import urllib2
 
@@ -17,25 +8,17 @@ API_URL = 'https://api.direct.yandex.ru/live/v4/json/'
 class DirectApi(object):
     def __init__(self, login=None, token=None):
         """
-        :param login: Логин Direct
-        :param token: Oauth-токен
+        :param login: Yandex Direct Login
+        :param token: Oauth-token
         """
 
         self.login = login
         self.token = token
 
         if not login or not token:
-            raise AuthorizationError(u'Введите логин и токен')
+            raise AuthorizationError(u'Please, enter valid login and token')
 
     def method(self, token, method, param=None):
-        """ Использование методов API
-
-        :param method: метод
-        :param param: параметры
-        """
-
-        # 'GetClientInfo'
-
         data = {
             'method': method,
             'token': token,
