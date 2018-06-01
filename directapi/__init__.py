@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 import json
-import urllib2
+import urllib3
 
 API_URL = 'https://api.direct.yandex.ru/live/v4/json/'
 
